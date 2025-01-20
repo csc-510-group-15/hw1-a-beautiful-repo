@@ -6,4 +6,6 @@ def test_add_numbers_pass():
 
 def test_add_numbers_fail():
     # This test will fail intentionally
-    assert add_numbers(10, 20) == 25  # Incorrect expected result
+    # Temporarily correcting this test to verify if autotest badge changes to "Success"
+    assert add_numbers(10, 20) == 30
+    # assert add_numbers(10, 20) == 25  # Incorrect expected result
