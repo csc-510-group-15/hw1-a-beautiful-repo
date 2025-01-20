@@ -17,19 +17,23 @@
   </a>
 </p>
 
+[![DOI](https://zenodo.org/badge/916942055.svg)](https://doi.org/10.5281/zenodo.14707163)
 
 [![Python Tests](https://github.com/csc-510-group-15/hw1-a-beautiful-repo/actions/workflows/python-tests.yml/badge.svg)](https://github.com/csc-510-group-15/hw1-a-beautiful-repo/actions/workflows/python-tests.yml)
-
-[![DOI](https://zenodo.org/badge/916942055.svg)](https://doi.org/10.5281/zenodo.14707163)
 
 
 # HW1: A Beautiful Repo
 
-Group Member:
+A GitHub repository outfitted with automated testing, badges, and documentation.
 
-Adam Imbert
-Hanqi Chen (hchen54) 
-Krishna Pallavalli
+`myfile.py` contains a Python script with simple functionality and an intentional error.\
+`tests.py` is an automated test script powered by *pytest*, with an intentionally failing test case.
+
+Created as part of homework 1 for CSC 510: Software Engineering.
+### Contributors (Group 15)
+- Adam Imbert (apimbert)
+- Hanqi Chen (hchen54) 
+- Krishna Pallavalli (kpallav)
 
 
 
