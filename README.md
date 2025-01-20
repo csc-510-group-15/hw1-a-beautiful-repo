@@ -20,6 +20,8 @@
 
 [![Python Tests](https://github.com/csc-510-group-15/hw1-a-beautiful-repo/actions/workflows/python-tests.yml/badge.svg)](https://github.com/csc-510-group-15/hw1-a-beautiful-repo/actions/workflows/python-tests.yml)
 
+[![DOI](https://zenodo.org/badge/916942055.svg)](https://doi.org/10.5281/zenodo.14707163)
+
 
 # HW1: A Beautiful Repo
 
