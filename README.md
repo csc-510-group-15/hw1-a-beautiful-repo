@@ -6,6 +6,10 @@
   <img src="https://img.shields.io/badge/Platform-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Platform: Linux" />
 </p>
 
+[![Python Tests](https://github.com/csc-510-group-15
+hw1-a-beautiful-repo/actions/workflows/python-test.yml/badge.svg)](https://github.com/csc-510-group-15
+hw1-a-beautiful-repo/actions/workflows/python-test.yml)
+
 # HW1: A Beautiful Repo
 
 

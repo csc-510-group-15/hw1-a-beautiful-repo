@@ -1,0 +1,35 @@
+# This GitHub Actions workflow is configured to run Python tests automatically on every commit to all branches and on pull requests.
+name: Python Tests
+
+on:
+  push:  # Trigger the workflow on every push
+    branches:
+      - '**'  # Run the workflow on all branches
+  pull_request:  # Run the workflow on all pull requests
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # The tests will run on the latest Ubuntu environment
+
+    steps:
+    - uses: actions/checkout@v4  # Step to check out the repository code
+
+    - name: Set up Python 3.13
+      uses: actions/setup-python@v5  # Set up the Python environment
+      with:
+        python-version: '3.13'  # Specify Python version 3.13
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip  # Upgrade pip to the latest version
+        pip install -r requirements.txt  # Install the dependencies listed in requirements.txt
+
+    - name: Test with pytest
+      run: |
+        pip install pytest pytest-cov  # Install pytest and pytest-cov for test coverage
+        pytest tests.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+        # Run pytest with the following options:
+        # --doctest-modules: Run tests in docstrings
+        # --junitxml: Save test results in JUnit XML format
+        # --cov=com: Measure test coverage for the 'com' module
+        # --cov-report=xml and --cov-report=html: Generate coverage reports in XML and HTML formats
